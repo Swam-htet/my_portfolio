@@ -9,7 +9,7 @@ function SocialItem({item}) {
 }
 
 export default function SocialList({list}) {
-    return (<ul className={'nav'}>
+    return (<ul className={'nav justify-content-center justify-content-lg-start'}>
         {
             list.map((item, index) => (<SocialItem key={index} item={item}/>))
         }

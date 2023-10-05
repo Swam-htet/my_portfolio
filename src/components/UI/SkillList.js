@@ -15,7 +15,7 @@ function Skill({skill}) {
 
 export default function SkillList({skills}) {
     return (<div className={'row flex-wrap'}>
-        <h4>These are my skills - </h4>
+        <h4 className={'mb-4'}>These are my skills - </h4>
         {skills.map((skill, index) => (
             <Skill key={index} skill={skill}/>
         ))}

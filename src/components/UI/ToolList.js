@@ -15,7 +15,9 @@ function ToolItem({tool}) {
 export default function ToolList({tools}) {
     return (
         <div>
-            <h6>My Favourite development tool list - </h6>
+            <h4 className={'mb-4'}>My Favourite development tool list - </h4>
+
+
             <div className={'row'}>
                 {tools.map((tool, index) => (
                     <ToolItem key={index} tool={tool}/>))}

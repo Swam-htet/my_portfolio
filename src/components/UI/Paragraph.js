@@ -1,5 +1,5 @@
 export default function Paragraph({content}){
     return (<div>
-        <p>{content}</p>
+        <p className={'fs-5'}>{content}</p>
     </div>);
 }

@@ -25,24 +25,28 @@ let list = [
 
 export default function Project() {
     return (
-        <div>
-            <Tabs defaultActiveKey={list[0].index} className="mb-3" fill>
-                {list.map((item) => (
-                    <Tab key={item.index} eventKey={item.index} title={item.name}>
-                        <div className={'card'}>
-                            <div className={'card-header'}>{item.name}</div>
-                            <div className={'card-body p-5'}>
-                                Description : {item.description}
-                            </div>
-                            <div className={'card-footer'}>
-                                <a href={item.link} className={'btn btn-outline-dark'}>
-                                    {item.name}
-                                </a>
-                            </div>
-                        </div>
-                    </Tab>
-                ))}
-            </Tabs>
+        <div style={{minHeight:"75vh",paddingTop:"100px"}}>
+            {/*<Tabs defaultActiveKey={list[0].index} className="mb-3" fill>*/}
+            {/*    {list.map((item) => (*/}
+            {/*        <Tab key={item.index} eventKey={item.index} title={item.name}>*/}
+            {/*            <div className={'card'}>*/}
+            {/*                <div className={'card-header'}>{item.name}</div>*/}
+            {/*                <div className={'card-body p-5'}>*/}
+            {/*                    Description : {item.description}*/}
+            {/*                </div>*/}
+            {/*                <div className={'card-footer'}>*/}
+            {/*                    <a href={item.link} className={'btn btn-outline-dark'}>*/}
+            {/*                        {item.name}*/}
+            {/*                    </a>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </Tab>*/}
+            {/*    ))}*/}
+            {/*</Tabs>*/}
+
+            <div className={'bg-dark rounded'} style={{height:"400px"}}>
+                <h1 className={'text-white text-center'} style={{paddingTop:"150px"}}>Coming Soon ..... </h1>
+            </div>
         </div>
     );
 }
